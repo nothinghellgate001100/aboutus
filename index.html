@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarnReview</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #4CAF50;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .hero {
+            background: url('hero.webp') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+            color: white;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        .section-title {
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: #4CAF50;
+        }
+        .features img, .how-it-works img {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .features .col-md-4, .articles .col-md-4, .reviews .col-md-4 {
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background-color: #FF5722;
+            border-color: #FF5722;
+        }
+        .btn-primary:hover {
+            background-color: #E64A19;
+            border-color: #E64A19;
+        }
+        .bg-light {
+            background-color: #f9f9f9 !important;
+        }
+        .blockquote-footer {
+            color: #FF5722;
+        }
+        .testimonial img {
+            border: 3px solid #FF5722;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+        }
+        footer a {
+            color: #FF5722;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">EarnReview</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#how-it-works">How It Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#articles">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#premium">Premium</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container text-center" style="padding-top: 30vh;" data-aos="fade-up">
+            <h1 class="display-4">Earn Money by Rating Products</h1>
+            <p class="lead">Join EarnReview today and start earning by sharing your opinions on Amazon, Alibaba, and AliExpress products!</p>
+            <a href="#register" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center section-title">About Us</h2>
+            <p class="text-center">EarnReview is a trusted platform that allows you to earn money by reviewing products. We ensure transparency and reliability in all transactions.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center section-title">Features</h2>
+            <div class="row">
+                <div class="col-md-4 text-center" data-aos="flip-left">
+                    <img src="amazon.webp" class="img-fluid" alt="Amazon Earnings">
+                    <h3>Amazon Earnings</h3>
+                    <p>Earn 4% commission by working with a price limit of 20USDT to 400USDT.</p>
+                </div>
+                <div class="col-md-4 text-center" data-aos="flip-left">
+                    <img src="alibaba.webp" class="img-fluid" alt="Alibaba Earnings">
+                    <h3>Alibaba Earnings</h3>
+                    <p>Earn 7% commission with a price limit of 350USDT to 800USDT.</p>
+                </div>
+                <div class="col-md-4 text-center" data-aos="flip-left">
+                    <img src="aliexpress.webp" class="img-fluid" alt="AliExpress Earnings">
+                    <h3>AliExpress Earnings</h3>
+                    <p>Earn 10% commission with a price limit of 800USDT to unlimited.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center section-title">How It Works</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="how-it-works.webp" class="img-fluid" alt="How It Works" data-aos="zoom-in">
+                </div>
+                <div class="col-md-6">
+                    <ol>
+                        <li>Register on our platform.</li>
+                        <li>Deposit USDT to your account.</li>
+                        <li>Rate products on Amazon, Alibaba, and AliExpress.</li>
+                        <li>Earn commissions based on your ratings and reviews.</li>
+                    </ol>
+                    <p>Our system uses your money to place orders, demonstrating real selling before returning your money with the added commission. This ensures transparency and authenticity in your earnings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="py-5 bg-light">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center section-title">Articles</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="flip-up">
+                    <h3>How to Earn by Rating Products</h3>
+                    <p>Learn the best practices for earning by rating products on EarnReview.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="col-md-4" data-aos="flip-up">
+                    <h3>Top Strategies for Maximizing Your Earnings</h3>
+                    <p>Discover strategies to maximize your earnings on our platform.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="col-md-4" data-aos="flip-up">
+                    <h3>Why EarnReview is Trusted</h3>
+                    <p>Understand why EarnReview is a reliable and transparent platform.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center section-title">Reviews</h2>
+            <div class="row" id="reviews-container">
+                <!-- Dynamic reviews will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premium" class="py-5 bg-light">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center section-title">Premium Feature</h2>
+            <p class="text-center">Upgrade to our premium plan and enjoy fixed earnings with exclusive benefits.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Fixed Earnings</h3>
+                    <p>Our premium plan guarantees fixed earnings every month, providing you with a stable income.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Exclusive Benefits</h3>
+                    <p>As a premium member, you'll get access to higher commission rates, priority support, and exclusive content.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#register" class="btn btn-primary btn-lg">Upgrade Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Section -->
+    <section id="register" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center section-title">Register Now</h2>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center section-title">Contact Us</h2>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="form-group">
+                    <label for="contact-name">Full Name</label>
+                    <input type="text" class="form-control" id="contact-name" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email address</label>
+                    <input type="email" class="form-control" id="contact-email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <p>&copy; 2024 EarnReview. All rights reserved.</p>
+            <p>Licensed under XYZ</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const reviewsContainer = document.getElementById('reviews-container');
+            const reviews = [
+                {
+                    name: 'John Doe',
+                    image: 'https://via.placeholder.com/150',
+                    text: 'EarnReview is amazing! I\'ve earned a lot by just rating products.',
+                    title: 'Professional Reviewer'
+                },
+                {
+                    name: 'Jane Smith',
+                    image: 'https://via.placeholder.com/150',
+                    text: 'A great way to make some extra money in my spare time.',
+                    title: 'Part-time Reviewer'
+                },
+                {
+                    name: 'Samuel Lee',
+                    image: 'https://via.placeholder.com/150',
+                    text: 'The process is transparent and reliable. Highly recommended!',
+                    title: 'Verified User'
+                },
+                {
+                    name: 'Anna Johnson',
+                    image: 'https://via.placeholder.com/150',
+                    text: 'I love using EarnReview. It\'s a great platform for earning extra income.',
+                    title: 'Frequent User'
+                },
+                {
+                    name: 'David Brown',
+                    image: 'https://via.placeholder.com/150',
+                    text: 'EarnReview provides a simple and effective way to make money online.',
+                    title: 'Happy User'
+                }
+            ];
+
+            // Shuffle reviews array
+            const shuffledReviews = reviews.sort(() => 0.5 - Math.random());
+
+            // Create and append review elements
+            shuffledReviews.forEach(review => {
+                const reviewElement = document.createElement('div');
+                reviewElement.classList.add('col-md-4', 'text-center', 'testimonial');
+                reviewElement.setAttribute('data-aos', 'fade-up');
+                reviewElement.innerHTML = `
+                    <blockquote class="blockquote">
+                        <img src="${review.image}" alt="${review.name}" class="rounded-circle mb-3" width="100" height="100">
+                        <p class="mb-0">"${review.text}"</p>
+                        <footer class="blockquote-footer">${review.name}, <cite title="Source Title">${review.title}</cite></footer>
+                    </blockquote>
+                `;
+                reviewsContainer.appendChild(reviewElement);
+            });
+        });
+    </script>
+</body>
+</html>
